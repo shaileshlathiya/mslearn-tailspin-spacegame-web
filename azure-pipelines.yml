@@ -17,7 +17,7 @@ variables:
 steps:
 - task: UseDotNet@2
   dispalyName: 'Use .NET Core SDK 3.1'
-  inputes:
+  inputs:
     packageType: sdk
     version: 3.1.300
 
@@ -38,7 +38,7 @@ steps:
 
 - task: DotNetCoreCLI@2
   displayName: 'Restore Project Dependencies'
-  inputes:
+  inputs:
     command: 'restore'
     projects: '**/*.csproj'
     
